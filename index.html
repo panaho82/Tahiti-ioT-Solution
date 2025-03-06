@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahiti IoT Solution - Solutions Connectées pour le Pacifique</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- TailwindCSS v3.3.3 with plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    
+    <!-- AlpineJS v3.12.0 -->
+    <script defer src="https://unpkg.com/alpinejs@3.12.0/dist/cdn.min.js"></script>
+    
+    <!-- FontAwesome (placeholder - needs valid kit ID) -->
+    <script src="https://kit.fontawesome.com/XXXXXXX.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tahiti-blue': '#1B365D',
+                        'tahiti-light': '#3B82F6',
+                        'tahiti-green': '#2D9B76'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center nav-content">
+                <div class="flex items-center logo-container">
+                    <img src="assets/images/logo.png" alt="Tahiti IoT Solution Logo">
+                </div>
+                <div class="hidden md:flex space-x-8 nav-links">
+                    <a href="#services" class="text-tahiti-blue hover:text-tahiti-light">Services</a>
+                    <a href="#solutions" class="text-tahiti-blue hover:text-tahiti-light">Solutions</a>
+                    <a href="#technologies" class="text-tahiti-blue hover:text-tahiti-light">Technologies</a>
+                    <a href="#contact" class="text-tahiti-blue hover:text-tahiti-light">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg pb-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center py-20">
+                <h1 class="text-5xl font-bold text-white mb-12">Solutions IoT pour le Pacifique</h1>
+                <p class="text-xl text-white mb-8">Solutions connectées intelligentes pour transformer votre entreprise</p>
+                <a href="#contact" class="bg-white text-tahiti-blue px-8 py-3 rounded-full font-semibold hover:bg-tahiti-light hover:text-white transition duration-300">
+                    Démarrer votre projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-tahiti-blue text-center mb-12">Nos Services IoT</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-tahiti-light text-4xl mb-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Réseaux LoRaWAN</h3>
+                    <p class="text-gray-600">Déploiement et gestion de réseaux LoRaWAN pour une connectivité longue portée et basse consommation.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-tahiti-light text-4xl mb-4">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Smart City</h3>
+                    <p class="text-gray-600">Solutions intelligentes pour la gestion urbaine : éclairage, déchets, stationnement et surveillance environnementale.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-tahiti-light text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Agriculture Connectée</h3>
+                    <p class="text-gray-600">Systèmes de surveillance des cultures, irrigation intelligente et suivi environnemental.</p>
+                </div>
+                <!-- Nouveaux services -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-tahiti-light text-4xl mb-4">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Plateforme de gestion IoT</h3>
+                    <p class="text-gray-600">Solution centralisée pour le monitoring et le contrôle de vos dispositifs IoT en temps réel.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-tahiti-light text-4xl mb-4">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Notifications et alertes</h3>
+                    <p class="text-gray-600">Système intelligent de notifications par email/SMS et gestion des seuils d'alertes personnalisables.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-tahiti-light text-4xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Géolocalisation</h3>
+                    <p class="text-gray-600">Suivi GPS précis des assets et visualisation sur cartes interactives avec historiques des déplacements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-tahiti-blue text-center mb-12">Solutions Sur Mesure</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="IoT Solution" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Surveillance Environnementale</h3>
+                        <p class="text-gray-600">Capteurs de qualité de l'air, de l'eau et météorologiques pour un suivi en temps réel.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3" alt="Smart Building" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Bâtiments Intelligents</h3>
+                        <p class="text-gray-600">Gestion intelligente de l'énergie, contrôle d'accès et optimisation des espaces.</p>
+                    </div>
+                </div>
+                <!-- Début des nouvelles cartes -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d" alt="Énergie Intelligente" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Solution Énergétique Intelligente</h3>
+                        <p class="text-gray-600">Optimisation de la consommation énergétique avec systèmes de monitoring intelligent et gestion prédictive.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b" alt="Ville Intelligente" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Ville Intelligente</h3>
+                        <p class="text-gray-600">Intégration complète des services urbains connectés pour une gestion municipale optimisée.</p>
+                    </div>
+                </div>
+                <!-- Fin des nouvelles cartes -->
+                <!-- Début des cartes supplémentaires -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1581092160563-3d2d2c1f1cef" alt="Comptage de personnes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Solution intelligente de comptage de personnes</h3>
+                        <p class="text-gray-600">Surveillance précise des flux de personnes avec analyse temps réel et rapports automatisés.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Surveillance IA" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-tahiti-blue mb-4">AI Video Surveillance</h3>
+                        <p class="text-gray-600">Détection intelligente d'anomalies et reconnaissance d'objets par vision par ordinateur.</p>
+                    </div>
+                </div>
+                <!-- Fin des cartes supplémentaires -->
+                <!-- Début des cartes supplémentaires -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1581092160563-3d2d2c1f1cef" alt="Comptage de personnes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-tahiti-blue mb-4">Solution intelligente de comptage de personnes</h3>
+                        <p class="text-gray-600">Surveillance précise des flux de personnes avec analyse temps réel et rapports automatisés.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Surveillance IA" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-tahiti-blue mb-4">AI Video Surveillance</h3>
+                        <p class="text-gray-600">Détection intelligente d'anomalies et reconnaissance d'objets par vision par ordinateur.</p>
+                    </div>
+                </div>
+                <!-- Fin des cartes supplémentaires -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-tahiti-blue text-center mb-12">Nos Technologies</h2>
+            <div class="grid md:grid-cols-4 gap-6 text-center flex-wrap">
+                <div class="p-6 flex-1 min-w-[200px] flex flex-col items-center h-48 justify-center">
+                    <img src="assets/images/lorawan.png" alt="LoRaWAN" class="h-20 w-32 mx-auto mb-4 object-contain">
+                    <h3 class="font-semibold text-tahiti-blue">LoRaWAN</h3>
+                </div>
+                <div class="p-6 flex-1 min-w-[200px] flex flex-col items-center h-48 justify-center">
+                    <img src="assets/images/mqtt.png" alt="MQTT" class="h-20 w-32 mx-auto mb-4 object-contain">
+                    <h3 class="font-semibold text-tahiti-blue">MQTT</h3>
+                </div>
+                <div class="p-6 flex-1 min-w-[200px] flex flex-col items-center h-48 justify-center">
+                    <img src="assets/images/docker.png" alt="Docker" class="h-20 w-32 mx-auto mb-4 object-contain">
+                    <h3 class="font-semibold text-tahiti-blue">Docker</h3>
+                </div>
+                <!-- Nouvelles technologies -->
+                <div class="p-6 flex-1 min-w-[200px] flex flex-col items-center h-48 justify-center">
+                    <img src="assets/images/protocole web.png" alt="Protocoles Web" class="h-20 w-32 mx-auto mb-4 object-contain">
+                    <h3 class="font-semibold text-tahiti-blue">HTTP/HTTPS</h3>
+                </div>
+                <div class="p-6 flex-1 min-w-[200px] flex flex-col items-center h-48 justify-center">
+                    <img src="assets/images/modbus.png" alt="Modbus" class="h-20 w-32 mx-auto mb-4 object-contain">
+                    <h3 class="font-semibold text-tahiti-blue">Modbus Industriel</h3>
+                </div>
+                <div class="p-6 flex-1 min-w-[200px] flex flex-col items-center h-48 justify-center">
+                    <img src="assets/images/aws.png" alt="AWS IoT Core" class="h-20 w-32 mx-auto mb-4 object-contain">
+                    <h3 class="font-semibold text-tahiti-blue">AWS IoT Core</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-tahiti-blue text-center mb-12">Contactez-nous</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="mb-6">
+                        <label class="block text-tahiti-blue mb-2" for="name">Nom</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-tahiti-light">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-tahiti-blue mb-2" for="email">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-tahiti-light">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-tahiti-blue mb-2" for="message">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-tahiti-light"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-tahiti-blue text-white py-3 rounded-lg font-semibold hover:bg-tahiti-light hover:text-white transition duration-300">
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-tahiti-blue text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Tahiti IoT Solution</h3>
+                    <p class="text-gray-300">Solutions IoT innovantes pour le Pacifique</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-300">Email: contact@tahiti-iot.com</p>
+                    <p class="text-gray-300">Tél: +689 87 XX XX XX</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-tahiti-light/30 text-center text-gray-300">
+                <p>&copy; 2025 Tahiti IoT Solution. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
