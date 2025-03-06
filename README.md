@@ -1,6 +1,6 @@
 # Tahiti IoT Solution - Site Web
 
-Site web vitrine pour Tahiti IoT Solution, présentant nos solutions et services IoT pour le Pacifique.
+Site web vitrine pour Tahiti IoT Solution, présentant nos solutions LoraWan et services IoT pour le Pacifique.
 
 ## Technologies utilisées
 
